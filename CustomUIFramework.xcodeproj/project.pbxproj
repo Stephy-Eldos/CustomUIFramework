@@ -8,11 +8,43 @@
 
 /* Begin PBXBuildFile section */
 		A7010014281A501D00E3236C /* CustomUIFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = A7010013281A501D00E3236C /* CustomUIFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A701001B281A504100E3236C /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A701001A281A504100E3236C /* InputField.swift */; };
+		A701001D281A507D00E3236C /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A701001C281A507D00E3236C /* RoundedButton.swift */; };
+		A701001F281A50C200E3236C /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A701001E281A50C200E3236C /* GradientButton.swift */; };
+		A7010021281A510F00E3236C /* PopAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010020281A510F00E3236C /* PopAlertView.swift */; };
+		A7010023281A514700E3236C /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010022281A514700E3236C /* EmailValidator.swift */; };
+		A7010025281A518800E3236C /* UnderLinedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010024281A518800E3236C /* UnderLinedButton.swift */; };
+		A7010027281A529900E3236C /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010026281A529900E3236C /* Validator.swift */; };
+		A7010029281A534600E3236C /* RequiredValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010028281A534600E3236C /* RequiredValidator.swift */; };
+		A7010037281A5A3D00E3236C /* TwoLinedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010036281A5A3D00E3236C /* TwoLinedButton.swift */; };
+		A7010075281AFB1900E3236C /* Light14Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010074281AFB1900E3236C /* Light14Label.swift */; };
+		A7010077281AFB5B00E3236C /* Regular14Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010076281AFB5B00E3236C /* Regular14Label.swift */; };
+		A7010079281AFB6700E3236C /* Regular12Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010078281AFB6700E3236C /* Regular12Label.swift */; };
+		A701007B281AFBA000E3236C /* Regular18Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A701007A281AFBA000E3236C /* Regular18Label.swift */; };
+		A701007D281AFBBA00E3236C /* SemiBold20Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A701007C281AFBBA00E3236C /* SemiBold20Label.swift */; };
+		A701007F281AFC1600E3236C /* Bold24Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A701007E281AFC1600E3236C /* Bold24Label.swift */; };
+		A7010081281AFC2A00E3236C /* Regular16Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010080281AFC2A00E3236C /* Regular16Label.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A7010010281A501D00E3236C /* CustomUIFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomUIFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7010013281A501D00E3236C /* CustomUIFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomUIFramework.h; sourceTree = "<group>"; };
+		A701001A281A504100E3236C /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
+		A701001C281A507D00E3236C /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		A701001E281A50C200E3236C /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		A7010020281A510F00E3236C /* PopAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopAlertView.swift; sourceTree = "<group>"; };
+		A7010022281A514700E3236C /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
+		A7010024281A518800E3236C /* UnderLinedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderLinedButton.swift; sourceTree = "<group>"; };
+		A7010026281A529900E3236C /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		A7010028281A534600E3236C /* RequiredValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredValidator.swift; sourceTree = "<group>"; };
+		A7010036281A5A3D00E3236C /* TwoLinedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoLinedButton.swift; sourceTree = "<group>"; };
+		A7010074281AFB1900E3236C /* Light14Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Light14Label.swift; sourceTree = "<group>"; };
+		A7010076281AFB5B00E3236C /* Regular14Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regular14Label.swift; sourceTree = "<group>"; };
+		A7010078281AFB6700E3236C /* Regular12Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regular12Label.swift; sourceTree = "<group>"; };
+		A701007A281AFBA000E3236C /* Regular18Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regular18Label.swift; sourceTree = "<group>"; };
+		A701007C281AFBBA00E3236C /* SemiBold20Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiBold20Label.swift; sourceTree = "<group>"; };
+		A701007E281AFC1600E3236C /* Bold24Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bold24Label.swift; sourceTree = "<group>"; };
+		A7010080281AFC2A00E3236C /* Regular16Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regular16Label.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +78,40 @@
 			isa = PBXGroup;
 			children = (
 				A7010013281A501D00E3236C /* CustomUIFramework.h */,
+				A701001A281A504100E3236C /* InputField.swift */,
+				A701001C281A507D00E3236C /* RoundedButton.swift */,
+				A701001E281A50C200E3236C /* GradientButton.swift */,
+				A7010020281A510F00E3236C /* PopAlertView.swift */,
+				A7010024281A518800E3236C /* UnderLinedButton.swift */,
+				A7010036281A5A3D00E3236C /* TwoLinedButton.swift */,
+				A7010073281AFAE100E3236C /* Labels */,
+				A701002A281A537200E3236C /* Validator */,
 			);
 			path = CustomUIFramework;
+			sourceTree = "<group>";
+		};
+		A701002A281A537200E3236C /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				A7010026281A529900E3236C /* Validator.swift */,
+				A7010022281A514700E3236C /* EmailValidator.swift */,
+				A7010028281A534600E3236C /* RequiredValidator.swift */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
+		A7010073281AFAE100E3236C /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				A7010074281AFB1900E3236C /* Light14Label.swift */,
+				A7010078281AFB6700E3236C /* Regular12Label.swift */,
+				A7010076281AFB5B00E3236C /* Regular14Label.swift */,
+				A7010080281AFC2A00E3236C /* Regular16Label.swift */,
+				A701007A281AFBA000E3236C /* Regular18Label.swift */,
+				A701007C281AFBBA00E3236C /* SemiBold20Label.swift */,
+				A701007E281AFC1600E3236C /* Bold24Label.swift */,
+			);
+			path = Labels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +157,7 @@
 				TargetAttributes = {
 					A701000F281A501D00E3236C = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 				};
 			};
@@ -129,6 +194,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7010077281AFB5B00E3236C /* Regular14Label.swift in Sources */,
+				A701007F281AFC1600E3236C /* Bold24Label.swift in Sources */,
+				A701001B281A504100E3236C /* InputField.swift in Sources */,
+				A7010081281AFC2A00E3236C /* Regular16Label.swift in Sources */,
+				A7010029281A534600E3236C /* RequiredValidator.swift in Sources */,
+				A701001F281A50C200E3236C /* GradientButton.swift in Sources */,
+				A7010079281AFB6700E3236C /* Regular12Label.swift in Sources */,
+				A701007B281AFBA000E3236C /* Regular18Label.swift in Sources */,
+				A7010023281A514700E3236C /* EmailValidator.swift in Sources */,
+				A701001D281A507D00E3236C /* RoundedButton.swift in Sources */,
+				A7010027281A529900E3236C /* Validator.swift in Sources */,
+				A7010075281AFB1900E3236C /* Light14Label.swift in Sources */,
+				A7010021281A510F00E3236C /* PopAlertView.swift in Sources */,
+				A7010037281A5A3D00E3236C /* TwoLinedButton.swift in Sources */,
+				A7010025281A518800E3236C /* UnderLinedButton.swift in Sources */,
+				A701007D281AFBBA00E3236C /* SemiBold20Label.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,10 +341,12 @@
 		A7010018281A501D00E3236C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = RYLP63S2K7;
+				DEVELOPMENT_TEAM = JJQT88D763;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -279,7 +362,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mariam.CustomUIFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,10 +373,12 @@
 		A7010019281A501D00E3236C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = RYLP63S2K7;
+				DEVELOPMENT_TEAM = JJQT88D763;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -307,6 +394,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mariam.CustomUIFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

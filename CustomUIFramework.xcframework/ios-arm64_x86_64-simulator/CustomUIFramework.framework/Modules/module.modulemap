@@ -1,0 +1,11 @@
+framework module CustomUIFramework {
+  umbrella header "CustomUIFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module CustomUIFramework.Swift {
+    header "CustomUIFramework-Swift.h"
+    requires objc
+}

@@ -1,0 +1,224 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CustomUIFramework
+@_exported import CustomUIFramework
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class Regular14Label : UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic public func prepareForInterfaceBuilder()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class Bold24Label : UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic public func prepareForInterfaceBuilder()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) open class InputField : UIKit.UIView {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var image: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var rightActionImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var placeholder: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var text: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var numberOfLines: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var heading: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var textColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var isSecureTextEntry: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var dismissOnReturn: Swift.Bool
+  @_Concurrency.MainActor(unsafe) open var imageView: UIKit.UIImageView
+  @_Concurrency.MainActor(unsafe) open var textField: UIKit.UITextField
+  @_Concurrency.MainActor(unsafe) open var underlinerView: UIKit.UIView
+  @_Concurrency.MainActor(unsafe) open var labelHeading: UIKit.UILabel
+  @_Concurrency.MainActor(unsafe) open var buttonRightAction: UIKit.UIButton
+  @_Concurrency.MainActor(unsafe) open var labelInvalidHeading: UIKit.UILabel
+  @_Concurrency.MainActor(unsafe) open var textView: UIKit.UITextView
+  @_Concurrency.MainActor(unsafe) open var constraintImageWidth: UIKit.NSLayoutConstraint?
+  @_Concurrency.MainActor(unsafe) open var constraintHeaderHeight: UIKit.NSLayoutConstraint?
+  @_Concurrency.MainActor(unsafe) open var constraintRightActionButtonWidth: UIKit.NSLayoutConstraint?
+  @_Concurrency.MainActor(unsafe) open var rightAction: (() -> Swift.Void)?
+  @objc dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic public func prepareForInterfaceBuilder()
+  @objc deinit
+}
+extension CustomUIFramework.InputField : UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class Regular16Label : UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic public func prepareForInterfaceBuilder()
+  @objc deinit
+}
+public struct RequiredValidator : CustomUIFramework.Validator {
+  public var invalidMessage: Swift.String?
+  public static func validate(input: Swift.String?) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) open class GradientButton : UIKit.UIButton {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var cornerRadius: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var startColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var endColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var startPoint: CoreGraphics.CGPoint {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var endPoint: CoreGraphics.CGPoint {
+    @objc get
+    @objc set
+  }
+  @objc dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc override dynamic public func prepareForInterfaceBuilder()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSublayers(of layer: QuartzCore.CALayer)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class Regular12Label : UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic public func prepareForInterfaceBuilder()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class Regular18Label : UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic public func prepareForInterfaceBuilder()
+  @objc deinit
+}
+public struct EmailValidator : CustomUIFramework.Validator {
+  public var invalidMessage: Swift.String?
+  public static func validate(input: Swift.String?) -> Swift.Bool
+}
+public struct MobileValidator : CustomUIFramework.Validator {
+  public var invalidMessage: Swift.String?
+  public static func validate(input: Swift.String?) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class RoundedButton : UIKit.UIButton {
+  @objc dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic public func prepareForInterfaceBuilder()
+  @objc deinit
+}
+public protocol Validator {
+  static func validate(input: Swift.String?) -> Swift.Bool
+  var invalidMessage: Swift.String? { get }
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class Light14Label : UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic public func prepareForInterfaceBuilder()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) open class PopAlertView : UIKit.UIView {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var message: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var affirmTitle: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var affirmImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var labelMessage: UIKit.UILabel
+  @_Concurrency.MainActor(unsafe) open var containerAffirm: UIKit.UIView
+  @_Concurrency.MainActor(unsafe) open var containerInnerAffirm: UIKit.UIView
+  @_Concurrency.MainActor(unsafe) open var buttonAffirm: UIKit.UIButton
+  @_Concurrency.MainActor(unsafe) open var labelAffirm: UIKit.UILabel
+  @_Concurrency.MainActor(unsafe) open var imageViewAffirm: UIKit.UIImageView
+  @_Concurrency.MainActor(unsafe) open var containerView: UIKit.UIView
+  @objc dynamic public init()
+  @_Concurrency.MainActor(unsafe) public init(message: Swift.String?, affirmTitle: Swift.String?, affirmImage: UIKit.UIImage?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic public func prepareForInterfaceBuilder()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @objc deinit
+}
+extension CustomUIFramework.PopAlertView {
+  @_Concurrency.MainActor(unsafe) public static func popWithTitle(message: Swift.String, affirmTitle: Swift.String = "OK", affirmImage: UIKit.UIImage? = nil, completion: (() -> Swift.Void)! = nil)
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class TwoLinedButton : UIKit.UIButton {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var primaryText: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var secondaryText: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var primaryTextColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var secondaryTextColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var buttonBackgroundColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var primaryLabel: UIKit.UILabel
+  @_Concurrency.MainActor(unsafe) open var secondaryLabel: UIKit.UILabel
+  @objc dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic public func prepareForInterfaceBuilder()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) open class UnderLinedButton : UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) open var underLineLayer: QuartzCore.CALayer?
+  @objc dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic public func prepareForInterfaceBuilder()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class SemiBold20Label : UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic public func prepareForInterfaceBuilder()
+  @objc deinit
+}
