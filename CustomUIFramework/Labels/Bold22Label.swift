@@ -8,7 +8,7 @@
 import UIKit
 
 @IBDesignable
-public class Bold24Label: UILabel {
+public class Bold22Label: UILabel {
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -25,6 +25,6 @@ public class Bold24Label: UILabel {
     }
     
     private func setUp() {
-        self.font = .systemFont(ofSize: 24, weight: .bold)
+        self.font = UIFont.StandardFont.Bold22
     }
 }

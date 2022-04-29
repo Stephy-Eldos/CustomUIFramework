@@ -25,6 +25,6 @@ public class Regular12Label: UILabel {
     }
     
     private func setUp() {
-        self.font = .systemFont(ofSize: 12, weight: .regular)
+        self.font = UIFont.StandardFont.Regular12
     }
 }

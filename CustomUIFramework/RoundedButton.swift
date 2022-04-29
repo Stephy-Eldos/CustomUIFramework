@@ -10,6 +10,20 @@ import UIKit
 @IBDesignable
 public class RoundedButton: UIButton {
     
+    @IBInspectable
+open var buttonBackgroundColor: UIColor = UIColor.black {
+        didSet {
+            backgroundColor = buttonBackgroundColor
+        }
+    }
+    
+    @IBInspectable
+open var textColor: UIColor = UIColor.white {
+        didSet {
+            titleLabel?.textColor = textColor
+        }
+    }
+    
     public init() {
         super.init(frame: CGRect.zero)
     }
@@ -30,7 +44,9 @@ public class RoundedButton: UIButton {
     
     private func setUp() {
         layer.cornerRadius = frame.size.height / 2
-        backgroundColor = .black
+        backgroundColor = buttonBackgroundColor
         titleLabel?.adjustsFontSizeToFitWidth = true
+        titleLabel?.textColor = textColor
+        titleLabel?.font = UIFont.StandardFont.Bold14
     }
 }

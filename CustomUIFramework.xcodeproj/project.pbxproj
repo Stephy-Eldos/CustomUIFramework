@@ -21,9 +21,10 @@
 		A7010077281AFB5B00E3236C /* Regular14Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010076281AFB5B00E3236C /* Regular14Label.swift */; };
 		A7010079281AFB6700E3236C /* Regular12Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010078281AFB6700E3236C /* Regular12Label.swift */; };
 		A701007B281AFBA000E3236C /* Regular18Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A701007A281AFBA000E3236C /* Regular18Label.swift */; };
-		A701007D281AFBBA00E3236C /* SemiBold20Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A701007C281AFBBA00E3236C /* SemiBold20Label.swift */; };
-		A701007F281AFC1600E3236C /* Bold24Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A701007E281AFC1600E3236C /* Bold24Label.swift */; };
+		A701007D281AFBBA00E3236C /* Bold20Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A701007C281AFBBA00E3236C /* Bold20Label.swift */; };
+		A701007F281AFC1600E3236C /* Bold22Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A701007E281AFC1600E3236C /* Bold22Label.swift */; };
 		A7010081281AFC2A00E3236C /* Regular16Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010080281AFC2A00E3236C /* Regular16Label.swift */; };
+		A7B27A26281BCB2400A587CF /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B27A25281BCB2400A587CF /* Font.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,9 +43,10 @@
 		A7010076281AFB5B00E3236C /* Regular14Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regular14Label.swift; sourceTree = "<group>"; };
 		A7010078281AFB6700E3236C /* Regular12Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regular12Label.swift; sourceTree = "<group>"; };
 		A701007A281AFBA000E3236C /* Regular18Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regular18Label.swift; sourceTree = "<group>"; };
-		A701007C281AFBBA00E3236C /* SemiBold20Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiBold20Label.swift; sourceTree = "<group>"; };
-		A701007E281AFC1600E3236C /* Bold24Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bold24Label.swift; sourceTree = "<group>"; };
+		A701007C281AFBBA00E3236C /* Bold20Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bold20Label.swift; sourceTree = "<group>"; };
+		A701007E281AFC1600E3236C /* Bold22Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bold22Label.swift; sourceTree = "<group>"; };
 		A7010080281AFC2A00E3236C /* Regular16Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regular16Label.swift; sourceTree = "<group>"; };
+		A7B27A25281BCB2400A587CF /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				A7010036281A5A3D00E3236C /* TwoLinedButton.swift */,
 				A7010073281AFAE100E3236C /* Labels */,
 				A701002A281A537200E3236C /* Validator */,
+				A7B27A25281BCB2400A587CF /* Font.swift */,
 			);
 			path = CustomUIFramework;
 			sourceTree = "<group>";
@@ -108,8 +111,8 @@
 				A7010076281AFB5B00E3236C /* Regular14Label.swift */,
 				A7010080281AFC2A00E3236C /* Regular16Label.swift */,
 				A701007A281AFBA000E3236C /* Regular18Label.swift */,
-				A701007C281AFBBA00E3236C /* SemiBold20Label.swift */,
-				A701007E281AFC1600E3236C /* Bold24Label.swift */,
+				A701007C281AFBBA00E3236C /* Bold20Label.swift */,
+				A701007E281AFC1600E3236C /* Bold22Label.swift */,
 			);
 			path = Labels;
 			sourceTree = "<group>";
@@ -195,7 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7010077281AFB5B00E3236C /* Regular14Label.swift in Sources */,
-				A701007F281AFC1600E3236C /* Bold24Label.swift in Sources */,
+				A701007F281AFC1600E3236C /* Bold22Label.swift in Sources */,
 				A701001B281A504100E3236C /* InputField.swift in Sources */,
 				A7010081281AFC2A00E3236C /* Regular16Label.swift in Sources */,
 				A7010029281A534600E3236C /* RequiredValidator.swift in Sources */,
@@ -206,10 +209,11 @@
 				A701001D281A507D00E3236C /* RoundedButton.swift in Sources */,
 				A7010027281A529900E3236C /* Validator.swift in Sources */,
 				A7010075281AFB1900E3236C /* Light14Label.swift in Sources */,
+				A7B27A26281BCB2400A587CF /* Font.swift in Sources */,
 				A7010021281A510F00E3236C /* PopAlertView.swift in Sources */,
 				A7010037281A5A3D00E3236C /* TwoLinedButton.swift in Sources */,
 				A7010025281A518800E3236C /* UnderLinedButton.swift in Sources */,
-				A701007D281AFBBA00E3236C /* SemiBold20Label.swift in Sources */,
+				A701007D281AFBBA00E3236C /* Bold20Label.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

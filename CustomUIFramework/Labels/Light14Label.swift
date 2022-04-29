@@ -25,6 +25,6 @@ public class Light14Label: UILabel {
     }
     
     private func setUp() {
-        self.font = .systemFont(ofSize: 14, weight: .light)
+        self.font = UIFont.StandardFont.Light14
     }
 }

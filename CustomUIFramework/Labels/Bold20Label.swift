@@ -25,6 +25,6 @@ public class SemiBold20Label: UILabel {
     }
     
     private func setUp() {
-        self.font = .systemFont(ofSize: 20, weight: .semibold)
+        self.font = UIFont.StandardFont.Bold20
     }
 }
