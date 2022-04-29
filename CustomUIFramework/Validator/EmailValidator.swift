@@ -18,11 +18,11 @@ public struct EmailValidator: Validator {
     }
 }
 
-public struct MobileValidator: Validator {
+public struct MobileValidator {
    public var invalidMessage: String? = "Please enter a valid Mobile Number"
     
-    public static func validate(input: String?) -> Bool {
-        let mobRegEx = "^[0-9+]{0,1}+[0-9]{5,16}$"
+    public static func validate(input: String?,min: Int, max: Int) -> Bool {
+        let mobRegEx = "^[0-9+]{0,1}+[0-9]{\(min),\(max)}$"
         let mobPred = NSPredicate(format:"SELF MATCHES %@", mobRegEx)
         return mobPred.evaluate(with: input)
     }

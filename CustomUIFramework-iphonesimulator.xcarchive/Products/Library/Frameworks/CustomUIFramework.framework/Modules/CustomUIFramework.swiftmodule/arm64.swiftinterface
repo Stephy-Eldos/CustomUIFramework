@@ -126,9 +126,9 @@ public struct EmailValidator : CustomUIFramework.Validator {
   public var invalidMessage: Swift.String?
   public static func validate(input: Swift.String?) -> Swift.Bool
 }
-public struct MobileValidator : CustomUIFramework.Validator {
+public struct MobileValidator {
   public var invalidMessage: Swift.String?
-  public static func validate(input: Swift.String?) -> Swift.Bool
+  public static func validate(input: Swift.String?, min: Swift.Int, max: Swift.Int) -> Swift.Bool
 }
 @objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class RoundedButton : UIKit.UIButton {
   @objc dynamic public init()
