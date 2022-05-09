@@ -94,9 +94,9 @@ open class PopAlertView: UIView {
         labelMessage.numberOfLines = 0
         
         imageViewAffirm.image = affirmImage
-        imageViewAffirm.tintColor = UIColor.StandardColor.PRIMARYBLUECOLOR
+        imageViewAffirm.tintColor = UIColor.StandardColor.PrimaryBlue
         
-        labelAffirm.textColor = UIColor.StandardColor.PRIMARYBLUECOLOR
+        labelAffirm.textColor = UIColor.StandardColor.PrimaryBlue
         labelAffirm.text = affirmTitle
         
         
@@ -183,7 +183,7 @@ open class PopAlertView: UIView {
         super.layoutSubviews()
         containerAffirm.layer.cornerRadius = 20
         containerAffirm.layer.borderWidth = 1.5
-        containerAffirm.layer.borderColor = UIColor.StandardColor.PRIMARYBLUECOLOR.cgColor
+        containerAffirm.layer.borderColor = UIColor.StandardColor.PrimaryBlue.cgColor
         containerView.layer.cornerRadius = 10
     }
 }

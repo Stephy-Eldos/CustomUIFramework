@@ -10,12 +10,34 @@ import UIKit
 
 public extension UIColor {
     
-    struct StandardColor {
-        static let LIGHTGRAYCOLOR = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)
-        static let VERYLIGHTGRAYCOLOR = UIColor(red: 248.0 / 255.0, green: 248.0 / 255.0, blue: 253.0 / 255.0, alpha: 1)
-        static let DARKGRAYCOLOR = UIColor.gray
-        static let PRIMARYBLUECOLOR = UIColor(red: 51.0 / 255.0, green: 111.0 / 255.0, blue: 163.0 / 255.0, alpha: 1)
-        static let BUTTONGRAYCOLOR = UIColor(red: 104.0 / 255.0, green: 102.0 / 255.0, blue: 106.0 / 255.0, alpha: 1)
-        static let BACKGROUNDBROWN = UIColor(red: 60.0 / 255.0, green: 58.0 / 255.0, blue: 68.0 / 255.0, alpha: 1)
+   struct StandardColor {
+        static let PrimaryBlue = UIColor(hex: "336FA3")
+        static let DarkBlue = UIColor(hex: "152C73")
+        static let Blue = UIColor(hex: "5199C6")
+        static let Green = UIColor(hex: "99C355")
+        static let Red = UIColor(hex: "CE0000")
+        static let DarkGray = UIColor(hex: "404040")
+        static let LightGray = UIColor(hex: "AFAFAF")
+        static let VeryLightGray = UIColor(hex: "F7F7F7")
+        static let ButtonGray = UIColor(hex: "68666A")
+        static let Brown = UIColor(hex: "3C3A44")
+        static let Black = UIColor(hex: "000000")
+        static let White = UIColor(hex: "FFFFFF")
+    }
+    
+    convenience init(hex: String, alpha: CGFloat = 1.0) {
+        let hexString: String = hex.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+        let scanner = Scanner(string: hexString)
+        var color: UInt64 = 0
+        
+        scanner.scanHexInt64(&color)
+        let mask = 0x000000FF
+        let r = Int(color >> 16) & mask
+        let g = Int(color >> 8) & mask
+        let b = Int(color) & mask
+        let red   = CGFloat(r) / 255.0
+        let green = CGFloat(g) / 255.0
+        let blue  = CGFloat(b) / 255.0
+        self.init(red:red, green:green, blue:blue, alpha:alpha)
     }
 }

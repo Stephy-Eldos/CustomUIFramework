@@ -37,13 +37,6 @@ open class NavigationBar: UIView {
         }
     }
     
-//    @IBInspectable
-//    public var image: UIImage? = nil {
-//        didSet {
-//            labelTitle.text = image
-//        }
-//    }
-    
     public init() {
         super.init(frame: CGRect.zero)
         setUp()
@@ -86,7 +79,7 @@ open class NavigationBar: UIView {
         stackViewItems.alignment = .center;
         stackViewItems.spacing = 4;
         
-        backgroundColor = UIColor.StandardColor.BUTTONGRAYCOLOR
+        backgroundColor = UIColor.StandardColor.ButtonGray
         
         let views: [String: Any] = [
             "labelTitle": labelTitle,

@@ -12,16 +12,12 @@
 		A701001D281A507D00E3236C /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A701001C281A507D00E3236C /* RoundedButton.swift */; };
 		A7010021281A510F00E3236C /* PopAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010020281A510F00E3236C /* PopAlertView.swift */; };
 		A7010023281A514700E3236C /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010022281A514700E3236C /* EmailValidator.swift */; };
-		A7010025281A518800E3236C /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010024281A518800E3236C /* TextButton.swift */; };
 		A7010027281A529900E3236C /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010026281A529900E3236C /* Validator.swift */; };
 		A7010029281A534600E3236C /* RequiredValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010028281A534600E3236C /* RequiredValidator.swift */; };
-		A7010075281AFB1900E3236C /* Light14Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010074281AFB1900E3236C /* Light14Label.swift */; };
-		A7010077281AFB5B00E3236C /* Regular14Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010076281AFB5B00E3236C /* Regular14Label.swift */; };
-		A7010079281AFB6700E3236C /* Regular12Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010078281AFB6700E3236C /* Regular12Label.swift */; };
-		A701007B281AFBA000E3236C /* Regular18Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A701007A281AFBA000E3236C /* Regular18Label.swift */; };
-		A701007D281AFBBA00E3236C /* Bold20Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A701007C281AFBBA00E3236C /* Bold20Label.swift */; };
-		A701007F281AFC1600E3236C /* Bold22Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A701007E281AFC1600E3236C /* Bold22Label.swift */; };
-		A7010081281AFC2A00E3236C /* Regular16Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010080281AFC2A00E3236C /* Regular16Label.swift */; };
+		A7010075281AFB1900E3236C /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7010074281AFB1900E3236C /* CustomLabel.swift */; };
+		A715146C28290A92006BC338 /* InfoplistButtonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A715146B28290A92006BC338 /* InfoplistButtonParser.swift */; };
+		A715146E28290AC9006BC338 /* InfoplistLabelParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A715146D28290AC9006BC338 /* InfoplistLabelParser.swift */; };
+		A715147028292020006BC338 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A715146F28292020006BC338 /* Constants.swift */; };
 		A720E852281EE3130055E55F /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A720E851281EE3130055E55F /* ExtensionViewController.swift */; };
 		A720E854281EE3400055E55F /* ExtensionUIResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A720E853281EE3400055E55F /* ExtensionUIResponder.swift */; };
 		A7362681281D2C9D007B14BE /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7362680281D2C9D007B14BE /* NavigationBar.swift */; };
@@ -33,6 +29,9 @@
 		A736268C281D8E6C007B14BE /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7362686281D2D91007B14BE /* UI.swift */; };
 		A736268E281D907E007B14BE /* TintedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A736268D281D907E007B14BE /* TintedImageView.swift */; };
 		A73C9F2E28212B7700C3BF85 /* PopAlertViewTwoActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73C9F2D28212B7700C3BF85 /* PopAlertViewTwoActions.swift */; };
+		A75F10742823C87F000C5B4E /* ConfigValues.plist in Resources */ = {isa = PBXBuildFile; fileRef = A75F10732823C87F000C5B4E /* ConfigValues.plist */; };
+		A75F10762823D65A000C5B4E /* InfoplistParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75F10752823D65A000C5B4E /* InfoplistParser.swift */; };
+		A778620C2826765F0030D02A /* ConfigValues.plist in Resources */ = {isa = PBXBuildFile; fileRef = A75F10732823C87F000C5B4E /* ConfigValues.plist */; };
 		A7B27A26281BCB2400A587CF /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B27A25281BCB2400A587CF /* Font.swift */; };
 		A7B27A2E281BE58200A587CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B27A2D281BE58200A587CF /* AppDelegate.swift */; };
 		A7B27A30281BE58200A587CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B27A2F281BE58200A587CF /* SceneDelegate.swift */; };
@@ -43,10 +42,6 @@
 		A7B27A40281BE5CA00A587CF /* CustomUIFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7010010281A501D00E3236C /* CustomUIFramework.framework */; platformFilter = ios; };
 		A7B27A41281BE5CA00A587CF /* CustomUIFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7010010281A501D00E3236C /* CustomUIFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A7B27A47281C327400A587CF /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B27A46281C327400A587CF /* Color.swift */; };
-		A7B27A4A281C374000A587CF /* RoundedBlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B27A49281C374000A587CF /* RoundedBlueButton.swift */; };
-		A7B27A4C281C37F100A587CF /* RoundedWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B27A4B281C37F100A587CF /* RoundedWhiteButton.swift */; };
-		A7B27A4E281C383000A587CF /* RoundedGrayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B27A4D281C383000A587CF /* RoundedGrayButton.swift */; };
-		A7B27A50281C4AFE00A587CF /* Medium18Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B27A4F281C4AFE00A587CF /* Medium18Label.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,16 +75,12 @@
 		A701001C281A507D00E3236C /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		A7010020281A510F00E3236C /* PopAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopAlertView.swift; sourceTree = "<group>"; };
 		A7010022281A514700E3236C /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
-		A7010024281A518800E3236C /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
 		A7010026281A529900E3236C /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		A7010028281A534600E3236C /* RequiredValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredValidator.swift; sourceTree = "<group>"; };
-		A7010074281AFB1900E3236C /* Light14Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Light14Label.swift; sourceTree = "<group>"; };
-		A7010076281AFB5B00E3236C /* Regular14Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regular14Label.swift; sourceTree = "<group>"; };
-		A7010078281AFB6700E3236C /* Regular12Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regular12Label.swift; sourceTree = "<group>"; };
-		A701007A281AFBA000E3236C /* Regular18Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regular18Label.swift; sourceTree = "<group>"; };
-		A701007C281AFBBA00E3236C /* Bold20Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bold20Label.swift; sourceTree = "<group>"; };
-		A701007E281AFC1600E3236C /* Bold22Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bold22Label.swift; sourceTree = "<group>"; };
-		A7010080281AFC2A00E3236C /* Regular16Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regular16Label.swift; sourceTree = "<group>"; };
+		A7010074281AFB1900E3236C /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		A715146B28290A92006BC338 /* InfoplistButtonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoplistButtonParser.swift; sourceTree = "<group>"; };
+		A715146D28290AC9006BC338 /* InfoplistLabelParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoplistLabelParser.swift; sourceTree = "<group>"; };
+		A715146F28292020006BC338 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A720E851281EE3130055E55F /* ExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
 		A720E853281EE3400055E55F /* ExtensionUIResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIResponder.swift; sourceTree = "<group>"; };
 		A7362679281D2B5F007B14BE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +92,8 @@
 		A7362686281D2D91007B14BE /* UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
 		A736268D281D907E007B14BE /* TintedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintedImageView.swift; sourceTree = "<group>"; };
 		A73C9F2D28212B7700C3BF85 /* PopAlertViewTwoActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopAlertViewTwoActions.swift; sourceTree = "<group>"; };
+		A75F10732823C87F000C5B4E /* ConfigValues.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ConfigValues.plist; sourceTree = "<group>"; };
+		A75F10752823D65A000C5B4E /* InfoplistParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoplistParser.swift; sourceTree = "<group>"; };
 		A7B27A25281BCB2400A587CF /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		A7B27A2B281BE58200A587CF /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7B27A2D281BE58200A587CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,10 +104,6 @@
 		A7B27A39281BE58300A587CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7B27A3B281BE58300A587CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7B27A46281C327400A587CF /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		A7B27A49281C374000A587CF /* RoundedBlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBlueButton.swift; sourceTree = "<group>"; };
-		A7B27A4B281C37F100A587CF /* RoundedWhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedWhiteButton.swift; sourceTree = "<group>"; };
-		A7B27A4D281C383000A587CF /* RoundedGrayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedGrayButton.swift; sourceTree = "<group>"; };
-		A7B27A4F281C4AFE00A587CF /* Medium18Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medium18Label.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,13 +148,14 @@
 			isa = PBXGroup;
 			children = (
 				A7010013281A501D00E3236C /* CustomUIFramework.h */,
-				A701001A281A504100E3236C /* InputField.swift */,
+				A778620D2826CF1A0030D02A /* TextField */,
 				A73C9F2F282184A400C3BF85 /* Alerts */,
 				A7B27A48281C36A400A587CF /* Buttons */,
 				A7010073281AFAE100E3236C /* Labels */,
 				A701002A281A537200E3236C /* Validator */,
 				A7B27A45281C325500A587CF /* Utility */,
 				A736267B281D2B63007B14BE /* BaseVC */,
+				A715146A28290A6B006BC338 /* Plist */,
 			);
 			path = CustomUIFramework;
 			sourceTree = "<group>";
@@ -183,16 +173,20 @@
 		A7010073281AFAE100E3236C /* Labels */ = {
 			isa = PBXGroup;
 			children = (
-				A7010074281AFB1900E3236C /* Light14Label.swift */,
-				A7010078281AFB6700E3236C /* Regular12Label.swift */,
-				A7010076281AFB5B00E3236C /* Regular14Label.swift */,
-				A7010080281AFC2A00E3236C /* Regular16Label.swift */,
-				A701007A281AFBA000E3236C /* Regular18Label.swift */,
-				A7B27A4F281C4AFE00A587CF /* Medium18Label.swift */,
-				A701007C281AFBBA00E3236C /* Bold20Label.swift */,
-				A701007E281AFC1600E3236C /* Bold22Label.swift */,
+				A7010074281AFB1900E3236C /* CustomLabel.swift */,
 			);
 			path = Labels;
+			sourceTree = "<group>";
+		};
+		A715146A28290A6B006BC338 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				A75F10732823C87F000C5B4E /* ConfigValues.plist */,
+				A75F10752823D65A000C5B4E /* InfoplistParser.swift */,
+				A715146B28290A92006BC338 /* InfoplistButtonParser.swift */,
+				A715146D28290AC9006BC338 /* InfoplistLabelParser.swift */,
+			);
+			path = Plist;
 			sourceTree = "<group>";
 		};
 		A736267B281D2B63007B14BE /* BaseVC */ = {
@@ -212,6 +206,14 @@
 				A73C9F2D28212B7700C3BF85 /* PopAlertViewTwoActions.swift */,
 			);
 			path = Alerts;
+			sourceTree = "<group>";
+		};
+		A778620D2826CF1A0030D02A /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				A701001A281A504100E3236C /* InputField.swift */,
+			);
+			path = TextField;
 			sourceTree = "<group>";
 		};
 		A7B27A2C281BE58200A587CF /* TestApp */ = {
@@ -247,6 +249,7 @@
 			children = (
 				A7B27A25281BCB2400A587CF /* Font.swift */,
 				A7B27A46281C327400A587CF /* Color.swift */,
+				A715146F28292020006BC338 /* Constants.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -254,10 +257,6 @@
 		A7B27A48281C36A400A587CF /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				A7010024281A518800E3236C /* TextButton.swift */,
-				A7B27A49281C374000A587CF /* RoundedBlueButton.swift */,
-				A7B27A4B281C37F100A587CF /* RoundedWhiteButton.swift */,
-				A7B27A4D281C383000A587CF /* RoundedGrayButton.swift */,
 				A701001C281A507D00E3236C /* RoundedButton.swift */,
 			);
 			path = Buttons;
@@ -357,6 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A75F10742823C87F000C5B4E /* ConfigValues.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +367,7 @@
 				A7B27A3A281BE58300A587CF /* LaunchScreen.storyboard in Resources */,
 				A7B27A37281BE58300A587CF /* Assets.xcassets in Resources */,
 				A736268A281D8E28007B14BE /* Root.storyboard in Resources */,
+				A778620C2826765F0030D02A /* ConfigValues.plist in Resources */,
 				A7B27A35281BE58200A587CF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,30 +379,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7010077281AFB5B00E3236C /* Regular14Label.swift in Sources */,
-				A701007F281AFC1600E3236C /* Bold22Label.swift in Sources */,
 				A701001B281A504100E3236C /* InputField.swift in Sources */,
-				A7B27A4C281C37F100A587CF /* RoundedWhiteButton.swift in Sources */,
-				A7010081281AFC2A00E3236C /* Regular16Label.swift in Sources */,
+				A715147028292020006BC338 /* Constants.swift in Sources */,
 				A7362683281D2CBB007B14BE /* NavigationTab.swift in Sources */,
 				A736268E281D907E007B14BE /* TintedImageView.swift in Sources */,
+				A75F10762823D65A000C5B4E /* InfoplistParser.swift in Sources */,
 				A7362681281D2C9D007B14BE /* NavigationBar.swift in Sources */,
 				A7010029281A534600E3236C /* RequiredValidator.swift in Sources */,
-				A7B27A4E281C383000A587CF /* RoundedGrayButton.swift in Sources */,
-				A7B27A4A281C374000A587CF /* RoundedBlueButton.swift in Sources */,
-				A7010079281AFB6700E3236C /* Regular12Label.swift in Sources */,
-				A701007B281AFBA000E3236C /* Regular18Label.swift in Sources */,
 				A7010023281A514700E3236C /* EmailValidator.swift in Sources */,
 				A701001D281A507D00E3236C /* RoundedButton.swift in Sources */,
 				A73C9F2E28212B7700C3BF85 /* PopAlertViewTwoActions.swift in Sources */,
 				A7010027281A529900E3236C /* Validator.swift in Sources */,
-				A7010075281AFB1900E3236C /* Light14Label.swift in Sources */,
-				A7B27A50281C4AFE00A587CF /* Medium18Label.swift in Sources */,
+				A715146E28290AC9006BC338 /* InfoplistLabelParser.swift in Sources */,
+				A7010075281AFB1900E3236C /* CustomLabel.swift in Sources */,
 				A7B27A26281BCB2400A587CF /* Font.swift in Sources */,
 				A7010021281A510F00E3236C /* PopAlertView.swift in Sources */,
-				A7010025281A518800E3236C /* TextButton.swift in Sources */,
-				A701007D281AFBBA00E3236C /* Bold20Label.swift in Sources */,
 				A7B27A47281C327400A587CF /* Color.swift in Sources */,
+				A715146C28290A92006BC338 /* InfoplistButtonParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

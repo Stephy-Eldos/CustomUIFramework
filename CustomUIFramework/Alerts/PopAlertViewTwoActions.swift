@@ -119,9 +119,9 @@ open class PopAlertViewTwoActions: UIView {
         labelMessage.numberOfLines = 0
         
         imageViewAffirm.image = affirmImage
-        imageViewAffirm.tintColor = UIColor.StandardColor.PRIMARYBLUECOLOR
+        imageViewAffirm.tintColor = UIColor.StandardColor.PrimaryBlue
         
-        labelAffirm.textColor = UIColor.StandardColor.PRIMARYBLUECOLOR
+        labelAffirm.textColor = UIColor.StandardColor.PrimaryBlue
         labelAffirm.text = affirmTitle
         labelAffirm2.textColor = UIColor.white
         labelAffirm2.text = affirmTitle2
@@ -250,12 +250,12 @@ open class PopAlertViewTwoActions: UIView {
         super.layoutSubviews()
         containerAffirm.layer.cornerRadius = 20
         containerAffirm.layer.borderWidth = 1.5
-        containerAffirm.layer.borderColor = UIColor.StandardColor.PRIMARYBLUECOLOR.cgColor
+        containerAffirm.layer.borderColor = UIColor.StandardColor.PrimaryBlue.cgColor
         
         containerAffirm2.layer.cornerRadius = 20
         containerAffirm2.layer.borderWidth = 1.5
-        containerAffirm2.layer.borderColor = UIColor.StandardColor.DARKGRAYCOLOR.cgColor
-        containerAffirm2.backgroundColor = UIColor.StandardColor.DARKGRAYCOLOR
+        containerAffirm2.layer.borderColor = UIColor.StandardColor.DarkGray.cgColor
+        containerAffirm2.backgroundColor = UIColor.StandardColor.DarkGray
         
         containerView.layer.cornerRadius = 10
     }

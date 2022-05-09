@@ -19,11 +19,25 @@ public struct EmailValidator: Validator {
 }
 
 public struct MobileValidator {
-   public var invalidMessage: String? = "Please enter a valid Mobile Number"
-    
     public static func validate(input: String?,min: Int, max: Int) -> Bool {
         let mobRegEx = "^[0-9+]{0,1}+[0-9]{\(min),\(max)}$"
         let mobPred = NSPredicate(format:"SELF MATCHES %@", mobRegEx)
         return mobPred.evaluate(with: input)
+    }
+}
+
+public struct UserIDValidator {
+    public static func validate(input: String?,min: Int, max: Int) -> Bool {
+        let userIDRegEx = "[A-Z0-9a-z]{\(min),\(max)}$"
+        let userIDPred = NSPredicate(format: "SELF MATCHES %@", userIDRegEx)
+        return userIDPred.evaluate(with: input)
+    }
+}
+
+public struct PasswordValidator {
+    public static func validate(input: String?,min: Int, max: Int) -> Bool {
+        let pswdRegEx = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[.#?!@$%^&<>*~:`-]).{\(min),\(max)}$"
+        let pswdPred = NSPredicate(format: "SELF MATCHES %@", pswdRegEx)
+        return pswdPred.evaluate(with: input)
     }
 }

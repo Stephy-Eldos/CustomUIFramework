@@ -47,7 +47,7 @@ public class NavigationTab: UIView {
         backgroundColor = UIColor.clear
         let gradientLayer = CAGradientLayer()
 
-        gradientLayer.colors = [UIColor.StandardColor.LIGHTGRAYCOLOR.cgColor, UIColor.StandardColor.VERYLIGHTGRAYCOLOR.cgColor, UIColor.white.cgColor]
+        gradientLayer.colors = [UIColor.StandardColor.LightGray.cgColor, UIColor.StandardColor.VeryLightGray.cgColor, UIColor.white.cgColor]
         gradientLayer.locations = [0.0, 0.4, 1.0]
         gradientLayer.frame = CGRect(x: 0, y: 0, width: bounds.size.width, height: 10)
         layer.insertSublayer(gradientLayer, at: 0)
@@ -98,8 +98,8 @@ public class HorizontalNavigationBarCell: UICollectionViewCell {
                 label.textColor = tintColor
                 imageView.tintColor = tintColor
             } else {
-                label.textColor = UIColor.StandardColor.DARKGRAYCOLOR
-                imageView.tintColor = UIColor.StandardColor.DARKGRAYCOLOR
+                label.textColor = UIColor.StandardColor.DarkGray
+                imageView.tintColor = UIColor.StandardColor.DarkGray
             }
         }
     }

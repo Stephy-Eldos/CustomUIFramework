@@ -11,18 +11,14 @@ import UIKit
 public class RoundedButton: UIButton {
     
     @IBInspectable
-open var buttonBackgroundColor: UIColor = UIColor.black {
+open var styleNumber: String? {
         didSet {
-            backgroundColor = buttonBackgroundColor
+            self.styleNo = styleNumber
+            setUp()
         }
     }
     
-    @IBInspectable
-open var textColor: UIColor = UIColor.white {
-        didSet {
-            setTitleColor(textColor, for: .normal)
-        }
-    }
+    open var styleNo : String? = nil
     
     public init() {
         super.init(frame: CGRect.zero)
@@ -43,10 +39,14 @@ open var textColor: UIColor = UIColor.white {
     }
     
     private func setUp() {
+        let fontName = InfoplistButtonParser.getStringValue(key: Constants.Plist.FontName, styleNo: styleNo ?? Constants.Plist.DefaultStyle)
+        let fontSize = InfoplistButtonParser.getIntValue(key: Constants.Plist.FontSize, styleNo: styleNo ?? Constants.Plist.DefaultStyle)
+        let fontColor = InfoplistButtonParser.getStringValue(key: Constants.Plist.FontColor, styleNo: styleNo ?? Constants.Plist.DefaultStyle)
+        let backgroundColor = InfoplistButtonParser.getStringValue(key: Constants.Plist.BackgroundColor, styleNo: styleNo ?? Constants.Plist.DefaultStyle)
+        self.titleLabel?.font = UIFont(name: fontName, size: CGFloat(fontSize))
+        self.setTitleColor(UIColor(hex: fontColor), for: .normal)
+        self.backgroundColor = UIColor(hex: backgroundColor)
         layer.cornerRadius = frame.size.height / 2
-        backgroundColor = buttonBackgroundColor
         titleLabel?.adjustsFontSizeToFitWidth = true
-        setTitleColor(textColor, for: .normal)
-        titleLabel?.font = UIFont.StandardFont.Bold14
     }
 }
